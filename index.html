@@ -10,12 +10,8 @@
     <script src="main.js"></script>
 </head>
 <body>
-   <div ng-app="myApp" ng-controller="myCtrl">
-    <p>Input something in the input box:</p>
-    <h1>First Name : <input type="text" ng-model="firstname" placeholder="Enter First Name"></h1>
-    <h1>Last Name: <input type="text" ng-model="lastname" placeholder="Enter Last Name"></h1>
-    <h1>Full Name: {{firstname + " " + lastname}}</h1>
-
+   <div ng-app="" ng-init="person= {firstname: 'Justice', lastname: 'Taylor'}">
+    <p>Full Name: {{person.firstname}} {{person.lastname}}</p>
    </div> 
 </body>
 </html>
